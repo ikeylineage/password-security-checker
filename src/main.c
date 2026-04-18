@@ -97,7 +97,7 @@ int main(void) {
     //uses an API call from "APICall.py" to access dictionary data from https://haveibeenpwned.com/
 
     char command[100];
-    snprintf(command, sizeof(command), "python3 APICall.py %s", password);
+    snprintf(command, sizeof(command), "python3 api-call.py %s", password);
     FILE *fp = popen(command, "r");
 
     int count;
