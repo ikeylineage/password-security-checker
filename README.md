@@ -30,3 +30,6 @@ The entropy is calculated with the length of the password in bits and the pool o
 The breach history / dictionary security checker uses the Pwned Passwords API by Troy Hunt to check whether the inputted password is on their database of pwned passwords.
 
 The pattern detection is rudimentary. Essentially it just looks for basic patterns like repeated characters and sequenced numbers.
+
+# security:
+k anonymity is used in the API call, this means that only the first 5 characters of the SHA1 hash is sent to the API and then the rest of the password is checked locally. This ensures that the password wont be usable by the API, because thousands of other passwords have identical starting characters when converted to SHA1 hash. However, I still do not reccomend using your real password with this tool considering that an API is used.
