@@ -12,7 +12,7 @@ python3-requests (sudo apt install python3-requests)
 
 
 # Compile guide:
-build with "gcc main.c -o main -lm"
+build with "gcc main.c -o main -lm" (must be run from inside the src/ folder)
 
 run the code with "./main"
 
